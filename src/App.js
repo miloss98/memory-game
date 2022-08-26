@@ -56,8 +56,7 @@ const App = () => {
         });
         resetTurn();
       } else {
-        console.log("not match!");
-        resetTurn();
+        setTimeout(() => resetTurn(), 1000);
       }
     }
   }, [firstChoice, secondChoice]);
@@ -81,7 +80,14 @@ const App = () => {
         {cards.map((card) => {
           const { id } = card;
           return (
-            <SingleCard key={id} card={card} handleChoice={handleChoice} />
+            <SingleCard
+              key={id}
+              card={card}
+              handleChoice={handleChoice}
+              flipped={
+                card === firstChoice || card === secondChoice || card.matched
+              }
+            />
           );
         })}
       </div>

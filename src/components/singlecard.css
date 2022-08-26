@@ -2,9 +2,27 @@
   position: relative;
 }
 .card img {
-  width: 100%;
-  height: 200px;
   display: block;
+  height: 120px;
+  width: 150px;
   border: 1px solid lightgreen;
   border-radius: 5px;
+  background-color: gray;
 }
+.card .front {
+  transform: rotateY(90deg);
+  position: absolute;
+  transition: all ease-in 0.2s;
+}
+.flipped .front {
+  transform: rotateY(0deg);
+}
+/* back of car */
+/* .card .back {
+  transform: all ease-in 0.2s;
+  transition-delay: 0.2s;
+}
+.flipped .back {
+  transform: rotate(90deg);
+  transition-delay: 0s;
+} */
