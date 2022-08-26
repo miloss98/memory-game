@@ -9,9 +9,9 @@ import {
   tractor,
   wheat,
 } from "./assets/index";
-import { cover } from "./assets/index";
 //css
 import "./app.css";
+import SingleCard from "./components/SingleCard";
 
 const cardImages = [
   { src: pig },
@@ -35,23 +35,18 @@ const App = () => {
     setCards(shuffledCards);
     setTurns(0);
   };
-  console.log(cards[0]?.src);
+
   return (
-    <div>
-      <h4> test </h4>
-      <button onClick={shuffleCards}> New game</button>
+    <div className="wrapper">
+      <h4 className="title"> Memory game v2</h4>
+      <button className="new-game-btn" onClick={shuffleCards}>
+        New game
+      </button>
 
       <div className="card-grid">
         {cards.map((card) => {
           const { id, src } = card;
-          return (
-            <article className="card" key={id}>
-              <div>
-                <img className="front" src={src} alt="card-front" />
-                <img className="back" src={cover} alt="card-back" />
-              </div>
-            </article>
-          );
+          return <SingleCard key={id} imageSrc={src} />;
         })}
       </div>
     </div>
