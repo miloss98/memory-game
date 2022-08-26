@@ -6,5 +6,6 @@ import sheep from "./images/sheep.png";
 import tomato from "./images/tomato.png";
 import tractor from "./images/tractor.png";
 import wheat from "./images/wheat.png";
+import cover from "./images/cover.jpg";
 
-export { corn, cow, pepper, pig, sheep, tomato, tractor, wheat };
+export { corn, cow, pepper, pig, sheep, tomato, tractor, wheat, cover };
