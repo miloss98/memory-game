@@ -1,12 +1,12 @@
 .card {
   position: relative;
+  border-radius: 3px;
 }
 .card img {
   display: block;
   height: 120px;
   width: 150px;
-  border: 1px solid lightgreen;
-  border-radius: 5px;
+  border-radius: 3px;
   background-color: gold;
 }
 .card .front {
@@ -20,8 +20,8 @@
 }
 /* back of card */
 .card .back {
-  transform: all ease-in 0.2s;
-  transition-delay: 0.2s;
+  transform: all ease-out 0.3s;
+  transition-delay: 0.3s;
 }
 .flipped .back {
   transform: rotateY(90deg);
