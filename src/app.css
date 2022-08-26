@@ -14,7 +14,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: yellow;
+  background-color: gold;
   border-bottom: 1px solid gray;
 }
 .title {
@@ -40,13 +40,13 @@ header {
   color: gold;
 }
 .new-game-btn {
-  background-color: green;
+  background-color: orangered;
   color: white;
   border: none;
   outline: none;
-  padding: 12px;
+  padding: 10px;
   border-radius: 3px;
-  font-size: 1rem;
+  font-size: 0.9em;
   font-weight: 600;
   letter-spacing: 1px;
 }

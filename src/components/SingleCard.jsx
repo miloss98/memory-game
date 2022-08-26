@@ -1,4 +1,5 @@
-import { cover } from "../assets/index";
+import { bgr } from "../assets/index";
+
 import "./singlecard.css";
 
 const SingleCard = ({ card, handleChoice, flipped, disabled }) => {
@@ -11,12 +12,7 @@ const SingleCard = ({ card, handleChoice, flipped, disabled }) => {
     <article className="card">
       <div className={flipped ? "flipped" : ""}>
         <img className="front" src={card.src} alt="card-front" />
-        <img
-          onClick={handleClick}
-          className="back"
-          src={cover}
-          alt="card-back"
-        />
+        <img onClick={handleClick} className="back" src={bgr} alt="card-back" />
       </div>
     </article>
   );
